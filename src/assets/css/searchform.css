@@ -1,0 +1,17 @@
+.searchform {
+  font-size: 0;
+  margin-bottom: 20px;
+}
+
+.searchform-box {
+  width: calc(100% - 60px);
+  height: 25px;
+  font-size: 14px;
+}
+
+.searchform-button {
+  width: 60px;
+  height: 25px;
+  font-size: 14px;
+  background-color: #00bfff;
+}

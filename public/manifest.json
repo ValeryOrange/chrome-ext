@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "My First Chrome Extension",
+  "short_name": "Chrome Ext",
+  "version": "0.1.0",
+  "description": "Start tab with information about user activity",
+
+  "icons": {
+    "48": "icon.png",
+    "128": "128.png",
+    "192": "favicon.ico"
+  },
+
+  "page_action": {
+    "default_icon": {
+      "48": "icon.png",
+      "128": "128.png",
+      "192": "favicon.ico"
+    },
+    "default_title": "My first Chrome Extension"
+  },
+
+  "chrome_url_overrides": {
+    "newtab": "./index.html"
+  },
+
+  "permissions": ["topsites"],
+
+  "background": {
+    "scripts": ["./getRecentlyVisitedSites.js"]
+  },
+
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

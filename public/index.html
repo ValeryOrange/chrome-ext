@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+    <title>My first Chrome extension</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Форма для поиска в Google -->
+      <form action="http://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+      <input name="sitesearch" type="hidden">
+      <input autocomplete="on" class="searchform-box" name="q" placeholder="Поиск в Google" required="required"  type="text">
+      <button class="searchform-button" type="submit">Поиск</button>
+      </form>
+
+      <!-- Контейнер для React-компонентов -->
+      <div id="root"></div>
+    </div>
+
+    <script src="./getRecentlyVisitedSites.js"></script>
+  </body>
+</html>
